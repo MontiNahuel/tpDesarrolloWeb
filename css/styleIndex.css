@@ -1,0 +1,106 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+html {
+    font-family: Arial, Helvetica, sans-serif; /*Cambiar despues*/
+    background-color: #F3DEBA;
+}
+
+header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    background-color: rgba(42, 25, 14, 0.913);
+    padding: 5px 10%;
+    position: fixed;
+    width: 100%;
+    overflow: hidden;
+    z-index: 1;
+    font-family: 'Dongle', sans-serif;
+    font-size: 30px;
+}
+
+header .logo img {
+    height: 55px;
+    width: auto;
+    transition: .3s;
+    cursor: pointer;
+}
+
+header .logo img:hover {
+    transform: scale(1.1);
+}
+
+header .navbar li {
+    display: inline-block;
+    margin: 0 25px;
+    transition: .3s;
+    font-weight: 500;
+}
+
+header .navbar li:hover {
+    transform: scale(1.1);
+
+}
+
+header .navbar li a {
+    color: aliceblue;
+    text-decoration: none;
+    transition: .3s;
+}
+
+header .navbar li a:hover {
+    color: rgb(200, 93, 0);
+}
+
+.inicio {
+    background-image: url(/images/bannerCafe.jpeg);
+    background-size: cover;
+    background-position: center center;
+    display: flex;
+    flex-direction: column;
+    flex-wrap: wrap;
+    align-items: flex-end;
+    justify-content: flex-end;
+    color: rgb(226, 240, 253);
+    height: 40rem;
+    position: relative;
+}
+
+.inicio:before {
+    content: "";
+    top: 0;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    position: absolute;
+    margin: 0;
+    padding: 0;
+    background: linear-gradient(to left, rgba(214, 214, 214, 0.211), rgba(255, 255, 255, 0));
+    border-radius: .7rem;
+}
+
+.inicio h1 {
+    /*
+    margin: 31rem 4rem .5rem 0rem;
+    */
+    font-size: 6rem;
+    font-weight: 200;
+    font-family: 'Great Vibes', cursive;
+    margin: 0 4rem;
+    position: relative;
+}
+
+.inicio h3 {
+    /*
+    margin: 0rem 4rem 4rem 0rem;
+    */
+    font-size: 2.5rem;
+    font-weight: 200;
+    margin: 1rem 4rem 8rem 4rem;
+    position: relative;
+    font-family: 'Dongle', sans-serif;
+}

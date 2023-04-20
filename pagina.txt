@@ -1,0 +1,12 @@
+Orientación de la pagina
+
+Primera vista de la pagina: 
+    Titulo y Subtitulo ✔️
+    Fondo orientado ✔️
+    Logo del negocio ✔️
+    NavBar ✔️
+    Full Responsive
+
+Segunda vista:
+    Sobre Nosotros
+    
