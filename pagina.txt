@@ -8,5 +8,8 @@ Primera vista de la pagina:
     Full Responsive
 
 Segunda vista:
-    Sobre Nosotros
-    
+    Ultimas novedades ✔️
+    Articulos para ultimas novedades ✔️
+
+Tercera Vista:
+    Sobre nosotros o quienes somos 
