@@ -6,10 +6,18 @@ Primera vista de la pagina:
     Logo del negocio ✔️
     NavBar ✔️
     Full Responsive
+    Animaciones
 
 Segunda vista:
     Ultimas novedades ✔️
     Articulos para ultimas novedades ✔️
+    Full Responsive
+    Animaciones
 
 Tercera Vista:
     Sobre nosotros o quienes somos 
+    Full Responsive
+    Animaciones
+
+Posibles Cambios:
+    Cambiar NavBar a Menu Hamburguesa: (en el caso de que no se pueda adaptar el navbar para resoluciones mas chicas)

@@ -6,7 +6,8 @@
 
 html {
     font-family: Arial, Helvetica, sans-serif; /*Cambiar despues*/
-    background-color: #F3DEBA;
+    background-color: #fef2dd;
+    padding-bottom: 20rem;
 }
 
 header {
@@ -140,7 +141,7 @@ section .articulos {
 }
 
 section .articulos .articulo {
-    margin: 0 3rem;
+    margin: 1rem 3rem;
 }
 
 .articulo img {
@@ -166,4 +167,67 @@ section .articulos .articulo {
     font-size: 16px;
     font-weight: 700;
     font-family: 'Poppins', sans-serif;
+}
+
+.sobreNosotros > h1 {
+    text-align: center;
+    padding:120px 0 60px 0;
+    font-family: 'Great Vibes', cursive;
+    font-size: 60px;
+    font-weight: 400;
+}
+
+.sobreNosotros > h2 {
+    text-align: center;
+    font-family: 'Dongle', sans-serif; /* Arreglar tema fuente de la Ñ*/
+    font-size: 35px;
+    font-weight: 200;
+    padding-bottom: 20px;
+}
+
+.sobreNosotros > h3 {
+    text-align: center;
+    font-family: 'Poppins', sans-serif;
+    font-size: 20px;
+}
+
+section .iconos {
+    display: flex;
+    flex-flow: row wrap;
+    justify-content: center;
+    align-items: center;
+}
+
+section .iconos .icono {
+    margin: 40px;
+}
+
+section .iconos .icono img {
+    height: 85px;
+    width: auto;
+    display: block;
+    margin: auto;
+}
+
+section .iconos .icono h3 {
+    text-align: center;
+    margin-top: 20px;
+    font-family: 'Poppins', sans-serif;
+}
+
+.sobreNosotros > p {
+    text-align: center;
+    font-family: 'Poppins', sans-serif;
+    font-weight: 500;
+    font-size: 18px;
+    margin: 20px 290px;
+}
+
+.sobreNosotros > img {
+    height: 385px;
+    width: 755px;
+    object-fit: cover;
+    display: block;
+    margin: 50px auto;
+    border-radius: 5px;
 }
