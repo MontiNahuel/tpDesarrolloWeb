@@ -231,3 +231,96 @@ section .iconos .icono h3 {
     margin: 50px auto;
     border-radius: 5px;
 }
+
+.nuestrosProductos > h1 {
+    text-align: center;
+    margin-top: 8rem;
+    font-size: 60px;
+    font-weight: 200;
+    font-family: 'Great Vibes', cursive;
+}
+
+.nuestrosProductos .categorias {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.nuestrosProductos .categorias a {
+    height: 480px;
+    width: 320px;
+    margin: 4rem;
+}
+
+.nuestrosProductos .categorias a .contenedorA{
+    width: 100%;
+    height: 100%;
+    overflow: hidden;
+    position: relative;
+    /*
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    */
+    border-radius: 5px;
+    filter: grayscale(45%);
+    transition: .5s;
+    box-shadow: 5px 8px 10px rgb(83, 83, 83);
+}
+
+.nuestrosProductos .categorias a .contenedorA img {
+    height: 480px;
+    object-fit: cover;
+    transition: .7s;
+    z-index: 2;
+    float: left;
+}
+
+.nuestrosProductos .categorias a .contenedorA .tazaBlanca {
+    width: auto;
+    position: absolute;
+    left: -30%;
+    z-index: 0;
+}
+
+.nuestrosProductos .categorias a .contenedorA .tazaRoja {
+    width: auto;
+    position: absolute;
+    right: 0%;
+    z-index: 0;
+}
+
+.nuestrosProductos .categorias a .contenedorA h1 {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    opacity: 0;
+    font-family: 'Dongle', sans-serif;
+    font-weight: 1000;
+    font-size: 54px;
+    transition: .7s;
+    z-index: 1;
+}
+
+.nuestrosProductos .categorias a .contenedorA .tituloCarta {
+    color: rgb(0, 0, 0);
+}
+
+.nuestrosProductos .categorias a .contenedorA .tituloVarios {
+    color: rgb(255, 255, 255);
+}
+
+.nuestrosProductos .categorias a .contenedorA:hover {
+    opacity: .8;
+    box-shadow: 5px 5px 5px rgb(91, 91, 91);
+}
+
+.nuestrosProductos .categorias a .contenedorA:hover h1 {
+    transform: translate(-50%, -50%) scale(1.1);
+    opacity: 1;
+}
+
+.nuestrosProductos .categorias a .contenedorA:hover img {
+    transform: scale(1.08);
+}
