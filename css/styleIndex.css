@@ -66,7 +66,7 @@ header .navbar li a:hover {
     flex-wrap: wrap;
     align-items: flex-end;
     justify-content: flex-end;
-    color: rgb(226, 240, 253);
+    color: rgb(36, 36, 36);
     height: 40rem;
     position: relative;
 }
