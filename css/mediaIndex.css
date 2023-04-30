@@ -77,7 +77,7 @@
         margin: 10px;
     }
 
-    .sobreNosotros img {
+    .sobreNosotros > .imgBarista {
         zoom: 35%;
     }
 
