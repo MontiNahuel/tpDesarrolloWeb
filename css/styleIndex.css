@@ -1,14 +1,17 @@
-* {
-    margin: 0;
-    padding: 0;
-    box-sizing: border-box;
+*,
+*::after,
+*::before {
+  box-sizing: border-box;
+  padding: 0;
+  margin: 0;
 }
+
 
 html {
     font-family: Arial, Helvetica, sans-serif; /*Cambiar despues*/
     background-color: #fef2dd;
 }
-
+/*
 header {
     display: flex;
     justify-content: space-between;
@@ -55,6 +58,7 @@ header .navbar li a {
 header .navbar li a:hover {
     color: rgb(200, 93, 0);
 }
+*/
 
 .inicio {
     background-image: url(/images/bannerCafe.jpeg);
@@ -87,6 +91,7 @@ header .navbar li a:hover {
     /*
     margin: 31rem 4rem .5rem 0rem;
     */
+    text-align: center;
     font-size: 6rem;
     font-weight: 200;
     font-family: 'Great Vibes', cursive;
@@ -98,6 +103,7 @@ header .navbar li a:hover {
     /*
     margin: 0rem 4rem 4rem 0rem;
     */
+    text-align: center;
     font-size: 2.5rem;
     font-weight: 200;
     margin: 1rem 4rem 8rem 4rem;
@@ -137,6 +143,7 @@ section .articulos {
     display: flex;
     flex-flow: row wrap;
     justify-content: center;
+    text-align: center;
 }
 
 section .articulos .articulo {
@@ -224,16 +231,20 @@ section .iconos .icono h3 {
 
 .sobreNosotros > img {
     height: 385px;
-    width: 755px;
+    width: auto;
     object-fit: cover;
     display: block;
     margin: 50px auto;
     border-radius: 5px;
 }
 
+.nuestrosProductos {
+    padding-top: 4rem;
+}
+
 .nuestrosProductos > h1 {
     text-align: center;
-    margin-top: 8rem;
+    margin-top: 4rem;
     font-size: 60px;
     font-weight: 200;
     font-family: 'Great Vibes', cursive;
