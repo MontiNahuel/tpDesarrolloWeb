@@ -7,7 +7,6 @@
 html {
     font-family: Arial, Helvetica, sans-serif; /*Cambiar despues*/
     background-color: #fef2dd;
-    padding-bottom: 20rem;
 }
 
 header {
@@ -66,7 +65,7 @@ header .navbar li a:hover {
     flex-wrap: wrap;
     align-items: flex-end;
     justify-content: flex-end;
-    color: rgb(36, 36, 36);
+    color: rgb(237, 237, 237);
     height: 40rem;
     position: relative;
 }
@@ -323,4 +322,51 @@ section .iconos .icono h3 {
 
 .nuestrosProductos .categorias a .contenedorA:hover img {
     transform: scale(1.08);
+}
+
+.piePagina {
+    text-align: center;
+    background-color: rgba(42, 25, 14, 0.913);
+    padding: 8rem;
+}
+
+.piePagina .redesSociales {
+    margin: 25px 0;
+}
+
+.piePagina .redesSociales a {
+    margin: 0 20px;
+}
+
+.piePagina .redesSociales a img {
+    filter: invert(75%);
+    transition: .3s;
+}
+
+.piePagina .redesSociales a img:hover {
+    filter: invert(100%);
+    transform: scale(1.1);
+}
+
+.piePagina .botones {
+    margin: 20px 0;
+}
+
+.piePagina .botones a {
+    margin: 0 25px;
+    text-decoration: none;
+    color: rgb(206, 213, 219);
+    font-family: 'Poppins', sans-serif;
+    transition: .3s;
+    border-bottom: 0px solid rgba(42, 25, 14, 0.913);
+}
+
+.piePagina .botones a:hover {
+    color: white;
+    border-bottom: 1px solid white;
+}
+
+.piePagina .nombreCompania small {
+    color: aliceblue;
+    font-family: 'Poppins', sans-serif;
 }
