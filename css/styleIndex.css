@@ -61,7 +61,7 @@ header .navbar li a:hover {
 */
 
 .inicio {
-    background-image: url(/images/bannerCafe\(1\).jpeg);
+    background-image: url(../images/bannerCafe.jpeg);
     background-size: cover;
     background-position: center center;
     display: flex;
