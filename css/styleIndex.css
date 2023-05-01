@@ -61,7 +61,7 @@ header .navbar li a:hover {
 */
 
 .inicio {
-    background-image: url(/images/bannerCafe.jpeg);
+    background-image: url(/images/bannerCafe\(1\).jpeg);
     background-size: cover;
     background-position: center center;
     display: flex;
@@ -337,7 +337,7 @@ section .iconos .icono h3 {
 .piePagina {
     text-align: center;
     background-color: rgba(42, 25, 14, 0.913);
-    padding: 8rem;
+    padding: 4rem 0;
 }
 
 .piePagina .redesSociales {
