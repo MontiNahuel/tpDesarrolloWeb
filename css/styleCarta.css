@@ -13,7 +13,7 @@ html {
     width: 100%;
 }
 
-header {
+/* header {
     display: flex;
     justify-content: space-between;
     align-items: center;
@@ -58,8 +58,12 @@ header .navbar li a {
 
 header .navbar li a:hover {
     color: rgb(200, 93, 0);
-}
+} */
 
+
+.tituloCarta{
+    padding-top: 80px;
+}
 .tituloCarta h2{
     font-family: 'Great Vibes', cursive;
     font-size: 4.5rem;
