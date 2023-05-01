@@ -136,7 +136,7 @@ header .navbar li a:hover {
     text-align: center;
     font-family: 'Poppins', sans-serif;
     font-size: 18px;
-    margin: 1rem 0 3rem 0;
+    margin: 1rem 2rem 3rem 2rem;
 }
 
 section .articulos {
@@ -185,10 +185,11 @@ section .articulos .articulo {
 
 .sobreNosotros > h2 {
     text-align: center;
-    font-family: 'Dongle', sans-serif; /* Arreglar tema fuente de la Ñ*/
-    font-size: 35px;
-    font-weight: 200;
+    font-family: 'Inter', sans-serif; /* Arreglar tema fuente de la Ñ*/
+    font-size: 25px;
+    font-weight: 500;
     padding-bottom: 20px;
+    margin: 0 2rem;
 }
 
 .sobreNosotros > h3 {
@@ -200,12 +201,12 @@ section .articulos .articulo {
 section .iconos {
     display: flex;
     flex-flow: row wrap;
-    justify-content: center;
+    justify-content: space-around;
     align-items: center;
 }
 
 section .iconos .icono {
-    margin: 40px;
+    margin: 20px;
 }
 
 section .iconos .icono img {
@@ -219,6 +220,8 @@ section .iconos .icono h3 {
     text-align: center;
     margin-top: 20px;
     font-family: 'Poppins', sans-serif;
+    font-size: 22px;
+    font-weight: bold; /* Terminar */
 }
 
 .sobreNosotros > p {
@@ -258,7 +261,7 @@ section .iconos .icono h3 {
 }
 
 .nuestrosProductos .categorias a {
-    height: 480px;
+    height: 420px;
     width: 320px;
     margin: 4rem;
 }
@@ -294,8 +297,8 @@ section .iconos .icono h3 {
 }
 
 .nuestrosProductos .categorias a .contenedorA .tazaRoja {
-    width: auto;
-    object-fit: cover;
+    position: relative;
+    left: -50%;
     z-index: 0;
 }
 
@@ -305,9 +308,9 @@ section .iconos .icono h3 {
     left: 50%;
     transform: translate(-50%, -50%);
     opacity: 0;
-    font-family: 'Dongle', sans-serif;
-    font-weight: 1000;
-    font-size: 54px;
+    font-family: 'Inter', sans-serif;
+    font-weight: 800;
+    font-size: 26px;
     transition: .7s;
     z-index: 1;
 }
@@ -317,11 +320,10 @@ section .iconos .icono h3 {
 }
 
 .nuestrosProductos .categorias a .contenedorA .tituloVarios {
-    color: rgb(255, 255, 255);
+    color: rgb(0, 0, 0);
 }
 
 .nuestrosProductos .categorias a .contenedorA:hover {
-    opacity: .8;
     box-shadow: 5px 5px 5px rgb(91, 91, 91);
 }
 
@@ -332,6 +334,7 @@ section .iconos .icono h3 {
 
 .nuestrosProductos .categorias a .contenedorA:hover img {
     transform: scale(1.08);
+    opacity: .5;
 }
 
 .piePagina {
