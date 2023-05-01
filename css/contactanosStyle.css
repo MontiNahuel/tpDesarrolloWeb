@@ -199,6 +199,53 @@ input[type='text']:focus, [type='email']:focus, textarea:focus {
     color: #F2F3EB;
 }
 
+.piePagina {
+    text-align: center;
+    background-color: rgba(42, 25, 14, 0.913);
+    padding: 4rem 0;
+}
+
+.piePagina .redesSocialesFooter {
+    margin: 25px 0;
+}
+
+.piePagina .redesSocialesFooter a {
+    margin: 0 20px;
+}
+
+.piePagina .redesSocialesFooter a img {
+    filter: invert(75%);
+    transition: .3s;
+}
+
+.piePagina .redesSocialesFooter a img:hover {
+    filter: invert(100%);
+    transform: scale(1.1);
+}
+
+.piePagina .botones {
+    margin: 20px 0;
+}
+
+.piePagina .botones a {
+    margin: 0 25px;
+    text-decoration: none;
+    color: rgb(206, 213, 219);
+    font-family: 'Poppins', sans-serif;
+    transition: .3s;
+    border-bottom: 0px solid rgb(42, 25, 14);
+}
+
+.piePagina .botones a:hover {
+    color: white;
+    border-bottom: 1px solid white;
+}
+
+.piePagina .nombreCompania small {
+    color: aliceblue;
+    font-family: 'Poppins', sans-serif;
+}
+
 @media screen and (max-width: 768px) {
     main > h1 {
         font-size: 5rem;
