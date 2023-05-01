@@ -1,0 +1,255 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+html {
+    font-family: 'Poppins', sans-serif;
+    -ms-text-size-adjust: 100%;
+    -webkit-text-size-adjust: 100%;
+    -moz-text-size-adjust: 100%;
+    background-color: #fef2dd;
+}
+
+button, select {
+    text-transform: none;
+}
+
+.contenedor {
+    width: 100%;
+}
+
+main {
+    padding: 6rem 0;
+}
+
+main h1 {
+    font-family: 'Great Vibes', cursive;
+    font-size: 6rem;
+    font-weight: 200;
+    text-align: center;
+}
+
+main .opciones {
+    display: flex;
+    align-items: start;
+    justify-content: center;
+    flex-wrap: wrap;
+}
+
+.opciones .opcion {
+    margin:  15px 30px;
+    background-color: rgb(163, 102, 61);
+    box-shadow: 2px 2px 8px rgb(103, 103, 103);
+    padding: 20px;
+}
+
+.opcion {
+    display: flex;
+    justify-content: center;
+    flex-flow: column;
+}
+
+.opcion a {
+    display: flex;
+    align-items: center;
+    /* width: 100px; */
+    text-decoration: none;
+    color: rgb(42, 25, 14);
+    transition: .3s;
+    transition-timing-function: ease-out;
+    padding: 0 .6rem;
+}
+
+.opcion a:hover {
+    color: white;
+    border-radius: 5px;
+    box-shadow: 2px 2px 8px rgb(42, 25, 14);
+}
+
+.opcion a:hover img {
+    filter: invert(100%);
+}
+
+.opcion a img {
+    height: 55px;
+    width: auto;
+    margin: 5px;
+    transition: .3s;
+    transition-timing-function: ease-out;
+}
+
+.contenedorForm {
+    max-width: 768px;
+    margin: 60px auto;
+}
+
+.contenedorForm > h1 {
+    font-size: 4.5rem;
+    font-weight: 200;
+    text-align: center;
+}
+
+form {
+    padding: 37.5px;
+    margin: 50px 0;
+    background-color: rgb(163, 102, 61);
+    box-shadow: 2px 2px 8px rgb(42, 25, 14);
+}
+
+button, input, select, textarea {
+    color: #000000;
+    font: inherit;
+    margin: 0;
+}
+
+input {
+    line-height: normal;
+}
+
+textarea {
+    overflow: auto;
+}
+
+.emailForm {
+	float: right;
+	width: 45%;
+}
+
+.nombre {
+	float: left;
+	width: 45%;
+}
+
+.message {
+	float: none;
+}
+
+.seleccion {
+    width: 100%;
+}
+  
+.telefono {
+    width: 100%;
+}
+
+textarea {
+	line-height: 150%;
+	height: 150px;
+    resize: none;
+    width: 100%;
+}
+
+::placeholder {
+    color: #000000;
+    opacity: .75;
+}
+
+input[type='text'], [type='email'], select, textarea {
+	background: none;
+    border: none;
+	border-bottom: solid 2px rgb(42, 25, 14);
+	color: #000000;
+	font-size: 1.000em;
+    font-weight: 400;
+    letter-spacing: 1px;
+	margin: 0em 0 1.875em 0;
+	padding: 0 0 0.875em 0;
+    text-transform: uppercase;
+	width: 100%;
+	-webkit-box-sizing: border-box;
+	-moz-box-sizing: border-box;
+	-ms-box-sizing: border-box;
+	-o-box-sizing: border-box;
+    box-sizing: border-box;
+	-webkit-transition: all 0.3s;
+	-moz-transition: all 0.3s;
+	-ms-transition: all 0.3s;
+	-o-transition: all 0.3s;
+	transition: all 0.3s;
+}
+
+input[type='text']:focus, [type='email']:focus, textarea:focus {
+	outline: none;
+	padding: 0 0 0.875em 0;
+}
+
+#enviar_boton {
+    background: none;
+    border: solid 2px rgb(42, 25, 14);
+    color: rgb(42, 25, 14);
+    cursor: pointer;
+    display: inline-block;
+    font-family: 'Helvetica', Arial, sans-serif;
+    font-size: 0.875em;
+    font-weight: bold;
+    outline: none;
+    padding: 20px 35px;
+    text-transform: uppercase;
+    -webkit-transition: all 0.3s;
+    -moz-transition: all 0.3s;
+    -ms-transition: all 0.3s;
+    -o-transition: all 0.3s;
+    transition: all 0.3s;
+}
+
+#enviar_boton:hover {
+    background: rgb(42, 25, 14);
+    color: #F2F3EB;
+}
+
+@media screen and (max-width: 768px) {
+    main > h1 {
+        font-size: 5rem;
+    }
+
+    .contenedorForm {
+        margin: 20px auto;
+        width: 95%;
+    }
+
+    .redesSociales{
+        /* margin: 15px 0; */
+        text-align: center;
+        align-items: center;
+    }
+
+    .redesSociales a {
+        width: 175px;
+    }
+
+    .opcion a:hover {
+        box-shadow: 0 0 0;
+    }
+}
+  
+  @media screen and (max-width: 480px) {
+    main > h1 {
+        font-size: 4rem;
+    }
+    
+    .contenedorForm > h1 {
+      font-size: 4rem;
+    }
+    
+    #enviar_boton {
+      padding: 15px 25px;
+    }
+}
+  
+  @media screen and (max-width: 420px) {
+    h1 {
+      font-size: 18px;
+    }
+    
+    input[type='text'], [type='email'], select, textarea {
+      font-size: 0.875em;
+    }
+
+    .opciones .opcion {
+        width: 95%;
+        margin: 15px 0;
+    }
+}
+  

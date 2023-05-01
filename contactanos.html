@@ -1,0 +1,92 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Dongle:wght@300&family=Great+Vibes&family=Inter&family=Poppins:wght@500&family=Source+Sans+Pro&display=swap" rel="stylesheet"> 
+    <link rel="stylesheet" href="css/navbarStyle.css">
+    <link rel="stylesheet" href="css/contactanosStyle.css">
+    <title>Document</title>
+</head>
+<body>
+    <div class="contenedor">
+        <header>
+            <nav class="navbar">
+                <div class="navbar-container container">
+                    <input type="checkbox" name="" id="">
+                    <div class="hamburger-lines">
+                        <span class="line line1"></span>
+                        <span class="line line2"></span>
+                        <span class="line line3"></span>
+                    </div>
+                    <ul class="menu-items">
+                        <li><a href="index.html">Inicio</a></li>
+                        <li><a href="carta.html">Carta</a></li>
+                        <li><a href="varios.html">Acompañamiento</a></li>
+                        <li><a href="contactanos.html">Contactanos</a></li>
+                    </ul>
+                    <div class="logo"><img src="logo/taza-de-cafe.png" alt="" width="55px"></div>
+                </div>
+            </nav>
+        </header>
+
+        <main>
+            <h1>Contactate con Nosotros</h1>
+            <div class="opciones">
+                <div class="opcion redesSociales">
+                    <h3>Nuestras Redes Sociales:</h3>
+                    <a href=""><img src="icons/logoTWContorno.png" alt=""><h4>Twitter</h4></a>
+                    <a href=""><img src="icons/logoIGContorno.png" alt=""><h4>Instagram</h4></a>
+                    <a href=""><img src="icons/logoFBContorno.png" alt=""><h4>Facebook</h4></a>
+                </div>
+                <div class="opcion emailNro">
+                    <h3>Escribinos a:</h3>
+                    <a href="mailto:hola@titoPuentesCafe.com" class="contacto email">
+                        <img src="icons/email.png" alt="">
+                        <h4>hola@TitoPuentesCafe.com</h4>
+                    </a>
+                    <a href="https://api.whatsapp.com/send/?phone=5491165181087" class="contacto tel">
+                        <img src="icons/whatsapp.png" alt="" >
+                        <h4>+54 9 11 6518-1087</h4>
+                    </a>
+                </div>
+            </div>
+            <div class="contenedorForm">
+                <h1>Dejanos un Mensaje</h1>
+                <form action="#">
+                    <div class="nombre">
+                        <label for="nombre"></label>
+                        <input type="text" placeholder="Nombre" name="nombre" id="nombre_input" required>
+                    </div>
+                    <div class="emailForm">
+                        <label for="email"></label>
+                        <input type="email" placeholder="Email" name="email" id="email_input" required>
+                    </div>
+                    <div class="telefono">
+                        <label for="telefono"></label>
+                        <input type="text" placeholder="telefono" name="telefono" id="telefono_input" required>
+                    </div>
+                    <div class="seleccion">
+                        <label for="seleccion"></label>
+                        <select placeholder="Seleccionar" name="seleccion" id="seleccion_input" required>
+                            <option hidden selected>Seleccionar</option>
+                            <option>Reserva en el local</option>
+                            <option>Administrativo</option>
+                        </select>
+                    </div>
+                    <div class="mensaje">
+                        <label for="mensaje"></label>
+                        <textarea name="mensaje" placeholder="Mensaje" id="mensaje_input" cols="30" rows="5" required></textarea>
+                    </div>
+                    <div class="enviar">
+                        <input type="button" value="Enviar" id="enviar_boton">
+                    </div>
+                </form>
+            </div>
+        </main>
+    </div>
+</body>
+</html>
