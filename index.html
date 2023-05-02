@@ -12,6 +12,7 @@
   <link rel="stylesheet" href="css/styleIndex.css">
   <link rel="stylesheet" href="css/mediaIndex.css">
   <link rel="stylesheet" href="css/navbarStyle.css">
+  <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
 </head>
 <body>
 <!--
@@ -48,20 +49,20 @@
   </header>
 
   <section class="inicio" id="inicio">
-    <h1 class="titulo">Cafetería Tito Puentes</h1>
-    <h3 class="subtitulo">100% Artesanal</h3>
+    <h1 class="titulo" data-aos="fade-left">Cafetería Tito Puentes</h1>
+    <h3 class="subtitulo" data-aos="fade-left">100% Artesanal</h3>
   </section>
 
   <section class="novedades">
-    <h1>Ultimas Novedades</h1>
-    <h2>¡Vasos reutilizables duraderos!</h2>
-    <h4>Presentamos nuestros vasos reutilizables que garantizan un uso duradero, totalmente resistentes y hechos con plástico reciclado. ¡Cuidemos el medioambiente!</h4>
+    <h1 data-aos="fade-in">Ultimas Novedades</h1>
+    <h2 data-aos="fade-in">¡Vasos reutilizables duraderos!</h2>
+    <h4 data-aos="fade-in">Presentamos nuestros vasos reutilizables que garantizan un uso duradero, totalmente resistentes y hechos con plástico reciclado. ¡Cuidemos el medioambiente!</h4>
     <div class="articulos">
-      <div class="articulo"><img src="images/vasosTermico.jpeg" alt="">
+      <div class="articulo" data-aos="fade-right"><img src="images/vasosTermico.jpeg" alt="">
         <h3>Vaso Reutilizable Térmico</h3>
         <small>¡Vaso térmico para usar y llevar a donde quieras!</small>
       </div>
-      <div class="articulo"><img src="images/vasosPlastico.jpeg" alt="">
+      <div class="articulo" data-aos="fade-left"><img src="images/vasosPlastico.jpeg" alt="">
         <h3>Vaso Reutilizable Plástico</h3>
         <small>Hecho con plástico duro 100% reciclado</small>
       </div>
@@ -70,12 +71,12 @@
 
   <section class="sobreNosotros" id="sobreNosotros">
     <h1>El Único e Inigualable Aroma del Café</h1>
-    <h2>Somos una cafeteria con mas de 20 años en el rubro, ubicada en el barrio de Caballito </h2>
+    <h2>Somos una cafeteria con mas de 20 años en el rubro, ubicada en el barrio de Caballito en Av Rivadavia 4939</h2>
     <h3>Nos destacamos por</h3>
     <div class="iconos">
-      <div class="icono"><img src="icons/taza-de-cafe.png" alt=""><h3>El Mejor Café</h3></div>
-      <div class="icono"><img src="icons/calidad.png" alt=""><h3>Calidad Garantizada</h3></div>
-      <div class="icono"><img src="icons/granos-de-cafe.png" alt=""><h3>100% Artesanal</h3></div>
+      <div class="icono" data-aos="fade-right"><img src="icons/taza-de-cafe.png" alt=""><h3>El Mejor Café</h3></div>
+      <div class="icono" data-aos="fade-in"><img src="icons/calidad.png" alt=""><h3>Calidad Garantizada</h3></div>
+      <div class="icono"data-aos="fade-left"><img src="icons/granos-de-cafe.png" alt=""><h3>100% Artesanal</h3></div>
     </div>
     <p>
       Nos esforzamos cada dia para ofrecerle a nuestros clientes el mejor producto, con un tratado 100% artesanal desde el grano de café, 
@@ -87,14 +88,14 @@
   <section class="nuestrosProductos" id="nuestrosProductos">
     <h1>Conoce mas sobre nuestros productos</h1>
     <div class="categorias">
-      <a href="carta.html">
+      <a href="carta.html" data-aos="fade-right">
         <div class="contenedorA">
           <h1 class="tituloCarta">Café</h1>
           <img src="images/cafeSobreMesa2.jpg" alt="" class="tazaBlanca">
         </div>
       </a>
       <a href="varios.html">
-        <div class="contenedorA">
+        <div class="contenedorA" data-aos="fade-left">
           <h1 class="tituloVarios">Acompañamiento</h1>
           <img src="images/facturas.jpeg" alt="" class="tazaRoja">
         </div>
@@ -116,9 +117,16 @@
       <a href="contactanos.html">Contactanos</a>
     </div>
     <div class="fila nombreCompania">
+      <small>Av Rivadavia 4939</small><br>
       <small>Cafeteria TP S.A © 2009</small>
     </div>
   </section>
+  <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
+  <script>
+  AOS.init({
+    duration: 850,
+    once: true
+  });
+  </script>
 </body>
-
 </html>

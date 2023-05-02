@@ -111,6 +111,11 @@ header .navbar li a:hover {
     font-family: 'Poppins', sans-serif;
 }
 
+.item small {
+    font-family: 'Poppins', sans-serif;
+    font-weight: 1000;
+}
+
 .piePagina {
     text-align: center;
     background-color: rgba(42, 25, 14, 0.913);

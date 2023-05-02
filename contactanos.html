@@ -10,6 +10,7 @@
     <link rel="stylesheet" href="css/navbarStyle.css">
     <link rel="stylesheet" href="css/contactanosStyle.css">
     <link rel="stylesheet" href="css/mediaIndex.css">
+    <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
     <title>Document</title>
 </head>
 <body>
@@ -37,13 +38,13 @@
         <main>
             <h1>Contactate con Nosotros</h1>
             <div class="opciones">
-                <div class="opcion redesSociales">
+                <div class="opcion redesSociales" data-aos="fade-right">
                     <h3>Nuestras Redes Sociales:</h3>
                     <a href=""><img src="icons/logoTWContorno.png" alt=""><h4>Twitter</h4></a>
                     <a href=""><img src="icons/logoIGContorno.png" alt=""><h4>Instagram</h4></a>
                     <a href=""><img src="icons/logoFBContorno.png" alt=""><h4>Facebook</h4></a>
                 </div>
-                <div class="opcion emailNro">
+                <div class="opcion emailNro" data-aos="fade-left">
                     <h3>Escribinos a:</h3>
                     <a href="mailto:hola@titoPuentesCafe.com" class="contacto email">
                         <img src="icons/email.png" alt="">
@@ -57,7 +58,7 @@
             </div>
             <div class="contenedorForm">
                 <h1>Dejanos un Mensaje</h1>
-                <form action="#">
+                <form action="#" data-aos="fade-up">
                     <div class="nombre">
                         <label for="nombre"></label>
                         <input type="text" placeholder="Nombre" name="nombre" id="nombre_input" required>
@@ -105,9 +106,18 @@
                 <a href="contactanos.html">Contactanos</a>
               </div>
             <div class="fila nombreCompania">
+                <small>Av Rivadavia 4939</small><br>
                 <small>Cafeteria TP S.A © 2009</small>
+                
             </div>
         </section>
     </div>
+    <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
+    <script>
+    AOS.init({
+      duration: 850,
+      once: true
+    });
+    </script>
 </body>
 </html>
