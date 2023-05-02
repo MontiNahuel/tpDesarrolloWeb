@@ -104,10 +104,6 @@ button, input, select, textarea {
     margin: 0;
 }
 
-textarea {
-    overflow: auto;
-}
-
 .emailForm {
     float: right;
     width: 45%;
