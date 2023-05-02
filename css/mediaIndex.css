@@ -76,6 +76,11 @@
         height: 185px;
         width: auto;
     }
+
+    .piePagina .botones a{
+        margin: 10px;
+        font-size: 14px;
+    }
 }
 
 @media screen and (max-width: 635px) {

@@ -5,7 +5,7 @@
 }
 
 html {
-    font-family: 'Poppins', sans-serif;
+    font-family: Arial, Helvetica, sans-serif;
     -ms-text-size-adjust: 100%;
     -webkit-text-size-adjust: 100%;
     -moz-text-size-adjust: 100%;
@@ -175,6 +175,61 @@ input[type='text']:focus, [type='email']:focus, textarea:focus {
 	padding: 0 0 0.875em 0;
 }
 
+/* input[type='file']::-webkit-file-upload-button {
+    visibility: hidden;
+} */
+
+.archivo {
+    position: relative;
+    margin: 1rem 0;
+    padding: 20px 35px;
+    width: 196px;
+    height: 40px;
+}
+
+.archivo label {
+    border: 2px solid rgb(42, 25, 14);
+    cursor: pointer;
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    transition: .3s;
+}
+
+input[type='file'] {
+    position: absolute;
+    height: 100%;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    opacity: 0;
+    cursor: pointer;
+}
+
+.archivo label span {
+    color: rgb(42, 25, 14);
+    text-transform: uppercase;
+    transition: .3s;
+    font-size: 0.875em;
+    font-weight: bold;
+    font-family: 'Helvetica', Arial, sans-serif;
+}
+
+.archivo:hover label span {
+    color: #F2F3EB;
+}
+
+.archivo:hover label {
+    background: rgb(42, 25, 14);
+}
+
 #enviar_boton {
     background: none;
     border: solid 2px rgb(42, 25, 14);
@@ -268,6 +323,11 @@ input[type='text']:focus, [type='email']:focus, textarea:focus {
 
     .opcion a:hover {
         box-shadow: 0 0 0;
+    }
+
+    .piePagina .botones a{
+        margin: 10px;
+        font-size: 14px;
     }
 }
   
