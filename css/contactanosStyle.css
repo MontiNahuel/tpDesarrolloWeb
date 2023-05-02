@@ -104,10 +104,6 @@ button, input, select, textarea {
     margin: 0;
 }
 
-input {
-    line-height: normal;
-}
-
 textarea {
     overflow: auto;
 }
