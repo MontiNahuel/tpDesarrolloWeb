@@ -10,6 +10,7 @@
     <link rel="stylesheet" href="css/navbarStyle.css">
     <link rel="stylesheet" href="css/contactanosStyle.css">
     <link rel="stylesheet" href="css/mediaIndex.css">
+    <script src="jquery-3.7.0.js"></script>
     <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
     <title>Contactanos</title>
 </head>
@@ -58,22 +59,22 @@
             </div>
             <div class="contenedorForm">
                 <h1>Dejanos un Mensaje</h1>
-                <form action="#" data-aos="fade-in">
+                <form action="" method="POST" data-aos="fade-in" id="form">
                     <div class="nombre">
                         <label for="nombre"></label>
-                        <input type="text" placeholder="Nombre" name="nombre" id="nombre_input" required>
+                        <input type="text" placeholder="Nombre" name="nombre" id="nombre_input" >
                     </div>
                     <div class="emailForm">
                         <label for="email"></label>
-                        <input type="email" placeholder="Email" name="email" id="email_input" required>
+                        <input type="email" placeholder="Email" name="email" id="email_input" >
                     </div>
                     <div class="telefono">
                         <label for="telefono"></label>
-                        <input type="text" placeholder="telefono" name="telefono" id="telefono_input" required>
+                        <input type="text" placeholder="telefono" name="telefono" id="telefono_input" >
                     </div>
                     <div class="seleccion">
                         <label for="seleccion"></label>
-                        <select placeholder="Seleccionar" name="seleccion" id="seleccion_input" required>
+                        <select placeholder="Seleccionar" name="seleccion" id="seleccion_input" >
                             <option hidden selected>Seleccionar</option>
                             <option>Reserva en el local</option>
                             <option>Administrativo</option>
@@ -81,14 +82,17 @@
                     </div>
                     <div class="mensaje">
                         <label for="mensaje"></label>
-                        <textarea name="mensaje" placeholder="Mensaje" id="mensaje_input" cols="30" rows="5" required></textarea>
+                        <textarea name="mensaje" placeholder="Mensaje" id="mensaje_input" cols="30" rows="5" ></textarea>
                     </div>
                     <div class="archivo">
                         <label for="archivo"><span>Subir Archivos</span></label>
                         <input type="file" name="Archivo" id="archivo">
                     </div>
                     <div class="enviar">
-                        <input type="button" value="Enviar" id="enviar_boton">
+                        <input type="submit" value="Enviar" id="enviar_boton">
+                    </div>
+                    <div>
+                        <p class="warnings" id="warnings"></p>
                     </div>
                 </form>
             </div>
@@ -119,5 +123,7 @@
       once: true
     });
     </script>
+    <script src="formulario.js"></script>
+    <script src="jquery.js"></script>
 </body>
 </html>
