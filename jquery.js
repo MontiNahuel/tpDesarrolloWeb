@@ -123,4 +123,23 @@ $(document).ready(function(){
     })
   })
   
+  //form
+  $("input").focus(function(){
+    $(this).css("background-color", "#fef2dd");
+  });
+  $("input").blur(function(){
+    $(this).css("background-color", "rgb(163, 102, 61)");
+  });
+  $("select").focus(function(){
+    $(this).css("background-color", "#fef2dd");
+  });
+  $("select").blur(function(){
+    $(this).css("background-color", "rgb(163, 102, 61)");
+  });
+  $("textarea").focus(function(){
+    $(this).css("background-color", "#fef2dd");
+  });
+  $("textarea").blur(function(){
+    $(this).css("background-color", "rgb(163, 102, 61)");
+  });
 })
