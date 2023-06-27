@@ -16,6 +16,10 @@ form.addEventListener("submit", e=>{
         warnings+='El nombre es corto<br>'
         entrar=true
     }
+    if(!isNaN(nombre.value)) {
+        warnings+='El nombre no pueden ser numeros<br>'
+        entrar = true
+    }
     if(!regexEmail.test(email.value)){
         warnings+='El email no es valido<br>'
         entrar=true
