@@ -163,6 +163,10 @@ header .navbar li a:hover {
     font-family: 'Poppins', sans-serif;
 }
 
+small{
+    display: none;
+}
+
 
 @media screen and (min-width: 320px) and (max-width: 430px){
     .grid-container{
