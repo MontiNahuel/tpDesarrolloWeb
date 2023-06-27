@@ -5,6 +5,8 @@ const seleccion = document.getElementById("seleccion_input")
 const mensaje = document.getElementById("mensaje_input")
 const form = document.getElementById("form")
 const parrafo = document.getElementById("warnings")
+const archivo = document.getElementById("archivo")
+const msgfile = document.getElementById("filemsg")
 
 form.addEventListener("submit", e=>{
     e.preventDefault()
@@ -42,4 +44,8 @@ form.addEventListener("submit", e=>{
     }else{
         parrafo.innerHTML="Enviado<br>"
     }
+})
+
+archivo.addEventListener("change", function(){
+    msgfile.textContent =this.files[0].name
 })
